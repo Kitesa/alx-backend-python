@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""
-Import wait_random from the previous python file
-"""
+"""Import wait_random from the previous python file"""
 
 
 import asyncio
