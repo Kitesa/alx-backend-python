@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-''' testing client '''
+""" Module for testing client """
 
-import unittest
-import json
 from client import GithubOrgClient
 from fixtures import TEST_PAYLOAD
 from parameterized import parameterized, parameterized_class
+import json
+import unittest
 from unittest.mock import patch, PropertyMock, Mock
 
 
 class TestGithubOrgClient(unittest.TestCase):
-    ''' test that GithubOrgClient.org returns the correct value '''
+    """ Class for Testing Github Org Client """
 
     @parameterized.expand([
         ('google'),
@@ -72,9 +72,7 @@ class TestGithubOrgClient(unittest.TestCase):
     TEST_PAYLOAD
 )
 class TestIntegrationGithubOrgClient(unittest.TestCase):
-    ''' implement the setUpClass and tearDownClass which
-    are part of the unittest.TestCase API.
-    '''
+    """ Class for Integration test of fixtures """
 
     @classmethod
     def setUpClass(cls):
